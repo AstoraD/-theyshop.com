@@ -1,0 +1,21 @@
+body {
+  background-image: url("/PracticasCSS/img/fondoblanco.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: scroll;
+}
+h1, h2 {
+  color: #2e8b57;
+}
+h3 {
+  color: #444;
+}
+ul {
+  margin-left: 20px;
+}
+
+a {
+  color: #2e8b57;
+  text-decoration: none;
+}

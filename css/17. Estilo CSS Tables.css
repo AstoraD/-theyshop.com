@@ -1,0 +1,206 @@
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.table1, .th1, .td1 {
+  border: 1px solid;
+}
+
+.table1 {
+  width: 100%;
+}
+
+.table2, .td2, .th2 {
+  border: 1px solid;
+}
+
+.table2 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-exterior {
+  border: 2px solid black; 
+  border-collapse: separate; 
+  width: 100%;
+}
+
+.tabla-exterior th,
+.tabla-exterior td {
+  border: none; 
+  padding: 8px;
+}
+
+.tabla-100 {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tabla-100 th {
+  height: 70px;
+  border: 1px solid black;
+}
+
+.tabla-100 td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.tabla-50 {
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tabla-50 th, .tabla-50 td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.tabla-centrado-td {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla-centrado-td th, .tabla-centrado-td td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.tabla-centrado-td td {
+  text-align: center;
+}
+
+.tabla-th-izquierda {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla-th-izquierda th, .tabla-th-izquierda td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.tabla-th-izquierda th {
+  text-align: left;
+}
+
+.tabla-vertical-inferior {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla-vertical-inferior th, .tabla-vertical-inferior td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.tabla-vertical-inferior td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+.tabla-padding th, .tabla-padding td {
+  padding: 15px;
+  text-align: left;
+}
+.tabla-padding {
+  background-color: #fce4ec; /* Rosa pastel */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla-divisores th, .tabla-divisores td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+.tabla-divisores {
+  background-color: #e0f7fa; /* Azul pastel */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table20 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table20 th, .table20 td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+.table20 tr:hover {background-color: #D6EEEE;}
+
+.table17 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table17 th, .table17 td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table17 tr:nth-child(odd) {
+  background-color: #99EE90;
+}
+
+.tabla-responsiva {
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f3f6ff; /* Azul pastel */
+  border-radius: 10px;
+}
+
+.tabla-scroll {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1000px; /* para forzar scroll horizontal */
+}
+
+.tabla-scroll th {
+  background-color: #b2ebf2; /* Celeste pastel */
+  color: #333;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabla-scroll td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #e0f7fa; /* Fondo suave para celdas */
+}
+
+.tabla-scroll tr:hover {
+  background-color: #ffecb3; /* Amarillo pastel al pasar el mouse */
+}
+
+

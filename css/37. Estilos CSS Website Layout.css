@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-image: url('/PracticasCSS/img/fondo1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.header {
+  background-color: #89023e;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #c9184a;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #fdf0d5;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 {
+  float: left;
+  padding: 10px;
+}
+
+.column.side2 {
+  width: 25%;
+}
+
+.column.middle2 {
+  width: 50%;
+}
+
+.row2::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #8B0000; 
+  color: #FFE4E1;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer a {
+  color: #FF6666;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #FFD700;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column, .column.side2, .column.middle2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.gallery {
+  background-color: #fff0f3;
+  padding: 40px 20px;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery-row img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-row img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  width: 22%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  margin-top: 8px;
+  color: #a71e34;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+

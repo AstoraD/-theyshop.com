@@ -1,0 +1,21 @@
+body {
+  background-image: url("/PracticasCSS/img/kuromi.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+    }
+    h1, h2 {
+      color: #b300b3;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 20px;
+      padding: 10px;
+      border-left: 4px solid #b300b3;
+      background-color: #f0e6f7;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }

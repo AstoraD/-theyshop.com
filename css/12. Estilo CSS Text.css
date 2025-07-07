@@ -1,0 +1,268 @@
+.div1 {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+.titulo1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+.p1 {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+.a1 {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+.cuerpo {
+  color: blue;
+}
+
+.titulo2 {
+  color: green;
+}
+
+body {
+  background-color: lightgrey;
+  color: blue;
+}
+
+.titulo3 {
+  background-color: black;
+  color: white;
+}
+
+.div2 {
+  background-color: blue;
+  color: white;
+}
+
+.titulo4 {
+  text-align: center;
+}
+
+.titulo5 {
+  text-align: left;
+}
+
+.titulo6 {
+  text-align: right;
+}
+
+.div3 {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+}
+
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+
+p.ex1 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+
+.hola {
+  text-decoration: overline;
+  color: black;
+}
+
+.hi {
+  text-decoration: line-through;
+  color: black;
+}
+
+.ciao {
+  text-decoration: underline;
+  color: black;
+}
+
+.ex {
+  text-decoration: overline underline;
+  color: black;
+}
+
+.clase1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+.clase2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+.clase3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;  
+}
+
+.clase4 {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;  
+}
+
+.clase5 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.clase6 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.clase7 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.clase8 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+.clase9 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+.clase10 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+.clase11 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;  /* this is default */
+}
+
+.clase12 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+.clase13 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+.clase14 {
+  text-decoration-line: underline;
+  text-decoration-color: red;  
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;  
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.sangria {
+  text-indent: 50px;
+}
+
+.espacio1 {
+  letter-spacing: 5px;
+}
+
+.espacio2 {
+  letter-spacing: -2px;
+}
+
+.pequeño {
+  line-height: 0.7;
+}
+
+.grande {
+  line-height: 1.8;
+}
+
+.espaciado1 {
+  word-spacing: 10px;
+}
+
+.espaciado2 {
+  word-spacing: -2px;
+}
+
+.espacioblanco {
+  white-space: nowrap;
+}
+
+.sombra1 {
+  text-shadow: 2px 2px;
+}
+
+.sombra2 {
+  text-shadow: 2px 2px #7E52A0;
+}
+
+.sombra3 {
+  text-shadow: 2px 2px 5px #1D84B5;
+}
+
+.sombra4 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.sombra5 {
+  text-shadow: 0 0 3px #44F814;
+}
+
+.sombra6 {
+  text-shadow: 0 0 3px #710000, 0 0 5px #F4E409;
+}
+
+.sombra7 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}

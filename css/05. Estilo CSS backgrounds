@@ -1,0 +1,45 @@
+body {
+  background-color: #DAD2D8;
+}
+
+.h1 {
+  background-color: #143642;
+  color: white;
+}
+
+.div {
+  background-color: #0F8B8D;
+}
+
+.p {
+  background-color:#EC9A29 ;
+}
+
+div {
+  background-color: #DAD2D8;
+}
+
+.primero {
+  opacity: 0.1;
+}
+
+.segundo {
+  opacity: 0.3;
+}
+
+.tercero {
+  opacity: 0.6;
+}
+
+
+div.first {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+div.second {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+div.third {
+  background: rgba(0, 128, 0, 0.6);
+}

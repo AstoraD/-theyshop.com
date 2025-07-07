@@ -1,0 +1,23 @@
+#myid {
+  background-color: blue;
+}
+
+.myclass {
+  background-color: gray;
+}
+
+p {
+  background-color: #cce6f4 !important;
+}
+
+#myid {
+  background-color: blue !important;
+}
+
+.myclass {
+  background-color: gray !important;
+}
+
+p {
+  background-color: red !important;
+}
