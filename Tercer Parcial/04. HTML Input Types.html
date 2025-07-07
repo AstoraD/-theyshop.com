@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva tu Fiesta Hello Kitty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FFF0F5; 
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #4A2B1E; 
+    }
+
+    .form-container {
+      background-color: #FFFFFF;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+      border: 2px solid #FFB6C1; 
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive; 
+      color: #FF69B4; 
+      margin-bottom: 25px;
+      font-size: 2.5em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #555;
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    input[type="month"],
+    select,
+    textarea {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #FFC0CB;
+      border-radius: 8px;
+      box-sizing: border-box; 
+      font-size: 1em;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+    }
+
+    input[type="color"] {
+      width: 80px; 
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid #FFC0CB;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .radio-group, .checkbox-group {
+      text-align: left;
+      margin-bottom: 15px;
+      border: 1px dashed #FFC0CB;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #FFF5F7;
+    }
+    .radio-group label, .checkbox-group label {
+      display: inline-block; 
+      margin-bottom: 5px;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+    .radio-group p, .checkbox-group p {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    textarea {
+      resize: vertical; 
+      min-height: 80px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #FF69B4; 
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px; 
+      cursor: pointer;
+      font-size: 1.1em;
+      font-weight: 600;
+      margin: 10px 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #FF1493; 
+      transform: translateY(-2px);
+    }
+
+    input[type="reset"] {
+      background-color: #C0C0C0;
+    }
+    input[type="reset"]:hover {
+      background-color: #A9A9A9; 
+    }
+
+    .hello-kitty-header {
+      margin-bottom: 20px;
+    }
+    .hello-kitty-header img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+ <div class="form-container">
+  <div class="hello-kitty-header">
+    <img src="/PracticasForms/img/hellokitty.jpg" alt="Logo Hello Kitty">
+    <h1>¡Reserva tu Fiesta Miau-ravillosa!</h1>
+  </div>
+
+  <form action="/PracticasForms/Extras/04.%20Input%20Respuesta.php" method="post" autocomplete="on">
+    <label for="host_name">Nombre de quien reserva:</label><br>
+    <input type="text" id="host_name" name="host_name" required><br><br>
+
+    <label for="email_contact">Correo Electrónico de Contacto:</label><br>
+    <input type="email" id="email_contact" name="email_contact" required><br><br>
+
+    <label for="phone_number">Teléfono de Contacto:</label><br>
+    <input type="tel" id="phone_number" name="phone_number" placeholder="Ej: 123-456-7890" required><br><br>
+
+    <label for="guests_number">Número de Invitados (10-100):</label><br>
+    <input type="number" id="guests_number" name="guests_number" min="10" max="100" value="20" required><br><br>
+
+    <label for="reservation_date">Fecha de la Fiesta:</label><br>
+    <input type="date" id="reservation_date" name="reservation_date" min="2024-01-01" required><br><br>
+
+    <label for="reservation_time">Hora Preferida (entre 10:00 y 22:00):</label><br>
+    <input type="time" id="reservation_time" name="reservation_time" min="10:00" max="22:00" required><br><br>
+
+    <label for="fav_color_decor">Color Favorito para Decoración:</label><br>
+    <input type="color" id="fav_color_decor" name="fav_color_decor" value="#FFB6C1"><br><br>
+
+    <div class="radio-group">
+      <p>Elige el estilo de tu fiesta Hello Kitty:</p>
+      <input type="radio" id="classic_kitty" name="kitty_style" value="Clásico" checked>
+      <label for="classic_kitty">Clásico (Rosa y Blanco)</label><br>
+      <input type="radio" id="kawaii_kitty" name="kitty_style" value="Kawaii">
+      <label for="kawaii_kitty">Kawaii (Pastel y Brillos)</label><br>
+      <input type="radio" id="sporty_kitty" name="kitty_style" value="Deportista">
+      <label for="sporty_kitty">Deportista (Rojo y Azul)</label>
+    </div><br>
+
+    <div class="checkbox-group">
+      <p>Servicios adicionales (elige uno o más):</p>
+      <input type="checkbox" id="photo_booth" name="addons" value="Cabina de Fotos">
+      <label for="photo_booth">Cabina de Fotos Hello Kitty</label><br>
+      <input type="checkbox" id="special_cake" name="addons" value="Pastel Especial">
+      <label for="special_cake">Pastel Personalizado de Hello Kitty</label><br>
+      <input type="checkbox" id="face_painting" name="addons" value="Pintacaras">
+      <label for="face_painting">Pintacaras Temático</label><br>
+      <input type="checkbox" id="balloons" name="addons" value="Globos">
+      <label for="balloons">Decoración con Globos Especiales</label>
+    </div><br>
+
+    <label for="special_requests">¿Algún deseo especial para tu fiesta?</label><br>
+    <textarea id="special_requests" name="special_requests" rows="5" cols="40" placeholder="Escribe aquí tus peticiones adicionales..."></textarea><br><br>
+
+    <label for="username">Personaje de Sanrio favorito:</label><br>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="myfile">Seleccione una canción especial para su fiesta:</label><br>
+    <input type="file" id="myfile" name="myfile"><br><br>
+
+    <label for="pwd">Ingrese aquí el número de su tarjeta para el pago:</label><br>
+    <input type="password" id="pwd" name="pwd"><br><br>
+
+    <input type="submit" value="¡Reservar Ahora!">
+    <input type="reset" value="Limpiar Formulario">
+  </form>
+
+</div>
+</body>
+</html>

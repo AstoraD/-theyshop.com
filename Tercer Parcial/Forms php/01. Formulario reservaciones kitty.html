@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu Fiesta Hello Kitty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF0F5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #4A2B1E;
+            line-height: 1.6;
+        }
+
+        .form-container {
+            background-color: #FFFFFF;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #FFB6C1;
+            text-align: center;
+            position: relative; /*boton cierre de sesion*/
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #FF69B4;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        h3 {
+            font-family: 'Inter', sans-serif;
+            color: #FFFFFF;
+            font-size: 1.2em;
+            margin: 0;
+            text-align: center;
+            padding: 5px 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        input[type="datetime-local"],
+        input[type="month"],
+        input[type="time"],
+        input[type="url"],
+        input[type="week"],
+        input[type="search"],
+        select,
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #FFC0CB;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+
+        input[type="color"] {
+            width: 80px;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid #FFC0CB;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+            vertical-align: middle;
+            transform: scale(1.1);
+            margin-bottom: 5px;
+        }
+
+        .radio-group, .checkbox-group {
+            text-align: left;
+            margin-bottom: 15px;
+            border: 1px dashed #FFC0CB;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #FFF5F7;
+        }
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            margin-bottom: 5px;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        .radio-group p, .checkbox-group p {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #FF69B4;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 10px 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #FF1493;
+            transform: translateY(-2px);
+        }
+
+        input[type="reset"] {
+            background-color: #C0C0C0;
+        }
+        input[type="reset"]:hover {
+            background-color: #A9A9A9;
+        }
+
+        input[type="file"] {
+            width: auto;
+            display: inline-block;
+            border: 1px solid #FFC0CB;
+            border-radius: 8px;
+            padding: 8px;
+            background-color: #FFF5F7;
+            cursor: pointer;
+        }
+
+        .hello-kitty-header {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative; /* Necesario para posicionar el botón de cerrar sesión */
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hello-kitty-header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+            margin-top: -50px;
+            background-color: #FFFFFF;
+            padding: 5px;
+        }
+
+        .title-arch-wrapper {
+            background-color: #FFB6C1;
+            border-radius: 0 0 100px 100px;
+            padding: 15px 30px 40px 30px;
+            position: relative;
+            z-index: 1;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logout-button-container {
+            text-align: right;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        .logout-button {
+            background-color: #FFC0CB; /* Rosa claro para el botón */
+            color: #4A2B1E; /* Texto café oscuro para contraste */
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        .logout-button:hover {
+            background-color: #FFB6C1; /* Un rosa ligeramente más oscuro al pasar el ratón */
+            transform: translateY(-1px);
+        }
+
+        /* Estilos para el modal de mensaje */
+        .custom-message-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .custom-message-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .custom-message-box {
+            background-color: #FFFFFF; /* Fondo blanco */
+            color: #4A2B1E; /* Texto café oscuro */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            max-width: 350px;
+            text-align: center;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            border: 2px solid #FFB6C1; /* Borde rosa claro */
+        }
+
+        .custom-message-overlay.show .custom-message-box {
+            transform: scale(1);
+        }
+
+        .custom-message-box p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .custom-message-box button {
+            background-color: #FF69B4; /* Rosa vibrante para el botón del modal */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-message-box button:hover {
+            background-color: #FF1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="logout-button-container">
+            <?php session_start(); // Asegúrate de que session_start() esté al principio de cada PHP que use sesiones ?>
+            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']): ?>
+                <a href="#" class="logout-button" onclick="event.preventDefault(); showLogoutMessage();">Cerrar Sesión</a>
+            <?php endif; ?>
+        </div>
+        
+        <div class="hello-kitty-header">
+            <div class="title-arch-wrapper">
+                <h3>Reservaciones de Fiestas Hello Kitty</h3>
+            </div>
+            <img src="/PracticasForms/img/hellokitty.jpg" alt="Logo Hello Kitty">
+            <h1>¡Reserva tu Fiesta Miau-ravillosa!</h1>
+        </div>
+
+        <form action="/PracticasForms/Forms%20php/php/01.%20Hoja%20de%20respuesta%20(conexión).php" method="post" autocomplete="on">
+            <label for="host_name">Nombre de quien reserva:</label><br>
+            <input type="text" id="host_name" name="host_name" required><br><br>
+
+            <label for="email_contact">Correo Electrónico de Contacto:</label><br>
+            <input type="email" id="email_contact" name="email_contact" required><br><br>
+
+            <label for="phone_number">Teléfono de Contacto:</label><br>
+            <input type="tel" id="phone_number" name="phone_number" placeholder="Ej: 123-456-7890" required><br><br>
+
+            <label for="guests_number">Número de Invitados (10-100):</label><br>
+            <input type="number" id="guests_number" name="guests_number" min="10" max="100" value="20" required><br><br>
+
+            <label for="reservation_date">Fecha de la Fiesta:</label><br>
+            <input type="date" id="reservation_date" name="reservation_date" min="2024-01-01" required><br><br>
+
+            <label for="reservation_time">Hora Preferida (entre 10:00 y 22:00):</label><br>
+            <input type="time" id="reservation_time" name="reservation_time" min="10:00" max="22:00" required><br><br>
+
+            <label for="fav_color_decor">Color Favorito para Decoración:</label><br>
+            <input type="color" id="fav_color_decor" name="fav_color_decor" value="#FFB6C1"><br><br>
+
+            <div class="radio-group">
+                <p>Elige el estilo de tu fiesta Hello Kitty:</p>
+                <input type="radio" id="classic_kitty" name="kitty_style" value="Clásico" checked>
+                <label for="classic_kitty">Clásico (Rosa y Blanco)</label><br>
+                <input type="radio" id="kawaii_kitty" name="kitty_style" value="Kawaii">
+                <label for="kawaii_kitty">Kawaii (Pastel y Brillos)</label><br>
+                <input type="radio" id="sporty_kitty" name="kitty_style" value="Deportista">
+                <label for="sporty_kitty">Deportista (Rojo y Azul)</label>
+            </div><br>
+
+            <div class="checkbox-group">
+                <p>Servicios adicionales (elige uno o más):</p>
+                <input type="checkbox" id="photo_booth" name="addons" value="Cabina de Fotos">
+                <label for="photo_booth">Cabina de Fotos Hello Kitty</label><br>
+                <input type="checkbox" id="special_cake" name="addons" value="Pastel Especial">
+                <label for="special_cake">Pastel Personalizado de Hello Kitty</label><br>
+                <input type="checkbox" id="face_painting" name="addons" value="Pintacaras">
+                <label for="face_painting">Pintacaras Temático</label><br>
+                <input type="checkbox" id="balloons" name="addons" value="Globos">
+                <label for="balloons">Decoración con Globos Especiales</label>
+            </div><br>
+            <label for="special_requests">¿Algún deseo especial para tu fiesta?</label><br>
+            <textarea id="special_requests" name="special_requests" rows="5" cols="40" placeholder="Escribe aquí tus peticiones adicionales..."></textarea><br><br>
+
+            <label for="username_sanrio">Personaje de Sanrio favorito:</label><br>
+            <input type="text" id="username_sanrio" name="username_sanrio"><br><br>
+
+            <label for="myfile">Seleccione una canción especial para su fiesta:</label><br>
+            <input type="file" id="myfile" name="myfile"><br><br>
+
+            <label for="pwd">Ingrese aquí el número de su tarjeta para el pago:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+
+            <input type="submit" value="¡Reservar Ahora!">
+            <input type="reset" value="Limpiar Formulario">
+        </form>
+    </div>
+
+    <!-- Overlay y Caja de Mensaje Personalizada -->
+    <div class="custom-message-overlay" id="customMessageOverlay">
+        <div class="custom-message-box">
+            <p id="customMessageText"></p>
+            <button onclick="closeCustomMessage()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        function showCustomMessage(message) {
+            document.getElementById('customMessageText').textContent = message;
+            document.getElementById('customMessageOverlay').classList.add('show');
+        }
+
+        function closeCustomMessage() {
+            document.getElementById('customMessageOverlay').classList.remove('show');
+        }
+
+        // Función para mostrar el mensaje de "Hasta luego!" y luego redirigir al script de cierre de sesión
+        function showLogoutMessage() {
+            showCustomMessage("¡Hasta luego!");
+            // Redirige al script de logout después de un breve retraso
+            setTimeout(function() {
+                window.location.href = "/PracticasForms/Forms%20php/php/01.Cierre_sesion.php";
+            }, 1500); // Redirige después de 1.5 segundos
+        }
+    </script>
+</body>
+</html>

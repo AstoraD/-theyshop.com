@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/PracticasForms/Estilos/02.%20Estilo%20HTML%20Forms%20Elements.css">
+  <title>CSS Form Elements</title>
+</head>
+
+<body>
+
+  <h1 style="text-align: center; color: #d4a276; background-color: #bc8a5f;">Crea tu gatocuenta</h1>
+
+  <form action="/PracticasForms/Extras/03.%20Elements%20Respuesta.html" style="text-align: center" class="div">
+    <fieldset>
+      <legend style="text-align: left;">Primero:</legend>
+      <label for="fname">Nombre gatuno:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+    </fieldset><br>
+
+    <label for="gatos">Escoge tu raza:</label>
+    <select id="gatos" name="gatos">
+      <option value="volvo">Gato siamés</option>
+      <option value="saab">Gato persa</option>
+      <option value="fiat">Gato esfinge</option>
+      <option value="audi">Gato Javanés</option>
+    </select><br><br>
+
+    <label for="gatitos">Escoge tu habilidad gatuna:</label>
+    <p>(Manten presionado Ctrl para seleccionar multiples habilidades)</p>
+    <select id="gatitos" name="gatitos" size="4" multiple>
+      <option value="volvo">Ternura</option>
+      <option value="saab">Buen saltador</option>
+      <option value="fiat">Buen escalador</option>
+      <option value="audi">Flexibilidad</option>
+      <option value="saab">Sentidos agudos</option>
+      <option value="fiat">Sociable</option>
+      <option value="audi">Gran cazador</option>
+    </select><br><br>
+
+    <p>Que color quieres ser</p>
+    <input list="colores" name="colores">
+    <datalist id="colores">
+      <option value="Café">
+        <option value="Naranja">
+          <option value="Con traje">
+            <option value="Negro">
+              <option value="Atigrado">
+              </datalist><br><br>
+
+              <form action="/PracticasForms/Extras/03.%20Elements%20Respuesta.html">
+                <textarea name="message" rows="10" cols="30">Escribe aquí que harías si fueras un gato.</textarea>
+                <br><br>
+
+                <button type="button" onclick="alert('¿Listo para crear tu cuenta?')" style="background-color: #6C422F; color: white;">Hola!</button>  <br><br>
+
+                <input type="submit">
+              </form>
+
+
+            </form>
+            
+
+
+          </body>
+
+          </html>

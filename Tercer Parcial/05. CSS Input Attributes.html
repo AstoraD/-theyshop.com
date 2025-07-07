@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/PracticasForms/Estilos/04.%20Estilo%20HTML%20Forms%20Input.css">
+  <title>CSS Input Attributes</title>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>✨ ¿Cuánto sabes de ENHYPEN? ✨</h1>
+
+        <form action="/PracticasForms/Extras/05.%20Input%20A%20Respuesta.html" method="post" autocomplete="on">
+            <h3 class="section-title">Preguntas Clave</h3>
+
+            <label for="q1_debut_date">1. ¿En qué fecha debutó ENHYPEN?</label>
+            <input type="date" id="q1_debut_date" name="q1_debut_date" required><br><br>
+
+            <label for="q2_oldest_member">2. ¿Quién es el mayor del grupo?</label>
+            <input type="text" id="q2_oldest_member" name="q2_oldest_member" value="Heeseung" readonly><br><br>
+
+            <label for="q3_la_member">3. ¿Cuál de todos los miembros nació en Los Ángeles?</label>
+            <input type="text" id="q3_la_member" name="q3_la_member" placeholder="Escribe el nombre aquí" required><br><br>
+
+            <label for="q4_debut_song">4. ¿Cuál fue su canción debut?</label>
+            <input type="text" id="q4_debut_song" name="q4_debut_song" placeholder="Ej: Given-Taken" required><br><br>
+
+            <label for="q5_leader">5. ¿Quién es el líder del grupo?</label>
+            <input type="text" id="q5_leader" name="q5_leader" autocomplete="off" required><br><br>
+
+            <label for="q6_theme">6. ¿Qué temática tiene ENHYPEN?</label>
+            <select id="q6_theme" name="q6_theme" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Vampiros">Vampiros</option>
+                <option value="Hombres Lobo">Hombres Lobo</option>
+                <option value="Ángeles">Ángeles</option>
+                <option value="Magia">Magia</option>
+            </select><br><br>
+
+            <label for="q7_jake_height">7. ¿Cuánto mide Jake? (en cm)</label>
+            <input type="number" id="q7_jake_height" name="q7_jake_height" min="170" max="185" step="1" value="176" required><br><br>
+
+            <label for="q8_niki_real_name">8. ¿Cuál es el nombre real de Ni-ki?</label>
+            <input type="text" id="q8_niki_real_name" name="q8_niki_real_name" pattern="[A-Za-z\s]{5,}" title="Debe ser el nombre completo de Ni-ki (solo letras y espacios)" required><br><br>
+
+            <label for="q9_skater_member">9. ¿Quién de todos los miembros fue patinador antes de debutar?</label>
+            <input type="text" id="q9_skater_member" name="q9_skater_member" required><br><br>
+
+            <label for="q10_sunoo_animal">10. ¿Cuál es el animal representativo de Sunoo?</label>
+            <input list="animals" id="q10_sunoo_animal" name="q10_sunoo_animal" placeholder="Escribe el animal" required>
+            <datalist id="animals">
+                <option value="Zorro">
+                <option value="Perro">
+                <option value="Gato">
+                <option value="Lobo">
+            </datalist><br><br>
+
+            <h3 class="section-title">Información Adicional (Opcional)</h3>
+
+            <label for="fan_email">Tu correo electrónico (para notificaciones):</label>
+            <input type="email" id="fan_email" name="fan_email" placeholder="tu@ejemplo.com"><br><br>
+
+            <label for="discovery_date">¿Cuándo descubriste a ENHYPEN?</label>
+            <input type="month" id="discovery_date" name="discovery_date"><br><br>
+
+            <label for="fav_enhypen_color">Elige tu color favorito de ENHYPEN:</label>
+            <input type="color" id="fav_enhypen_color" name="fav_enhypen_color" value="#8A2BE2"><br><br>
+
+            <label for="love_level">¿Qué tan fan eres de ENHYPEN? (0 = Poco, 50 = Mucho)</label>
+            <input type="range" id="love_level" name="love_level" min="0" max="50" value="40"><br><br>
+
+            <label for="fav_photo">Sube tu foto favorita de ENHYPEN (Ejemplo):</label>
+            <input type="file" id="fav_photo" name="fav_photo" multiple><br><br>
+
+            <input type="hidden" id="quiz_version" name="quiz_version" value="1.0">
+
+            <label for="feedback_text">Déjanos tus comentarios sobre el quiz:</label>
+            <textarea id="feedback_text" name="feedback_text" rows="4" placeholder="¡Me encantó!"></textarea><br><br>
+
+            <h3 class="section-title">Finalizar Quiz</h3>
+            <input type="submit" value="¡Enviar Respuestas!">
+            <input type="reset" value="Reiniciar Quiz">
+            <br><br>
+            <p>Puedes enviar haciendo clic en este ícono:</p>
+            <input type="image" src="/PracticasForms/img/logoenhypen.jpg" alt="Enviar Quiz" width="48" height="48">
+        </form>
+    </div>
+</body>
+
+</html>

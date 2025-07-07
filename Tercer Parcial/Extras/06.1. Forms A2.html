@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Tu Certificado de Amistad!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Dancing+Script:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E6F7FF;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .certificate-container {
+            background-color: #FFFFFF;
+            padding: 40px 50px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+            border: 5px solid #FFDAB9;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .certificate-container::before,
+        .certificate-container::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            opacity: 0.3;
+        }
+
+        .certificate-container::before {
+            top: 20px;
+            left: 20px;
+            background-image: url('https://placehold.co/100x100/FFDAB9/FFFFFF?text=💖');
+        }
+
+        .certificate-container::after {
+            bottom: 20px;
+            right: 20px;
+            background-image: url('https://placehold.co/100x100/ADD8E6/4B0082?text=🐻');
+        }
+
+        .certificate-header {
+            margin-bottom: 30px;
+        }
+
+        .certificate-header img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .certificate-header h1 {
+            font-family: 'Fredoka One', cursive;
+            color: #FF69B4;
+            font-size: 3.5em;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.15);
+            margin-bottom: 10px;
+        }
+
+        .certificate-header p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8em;
+            color: #8A2BE2;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .certificate-body {
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        .certificate-body p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .certificate-body strong {
+            color: #FF69B4;
+            font-weight: 700;
+        }
+
+        .attribute-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px dashed #E0E0E0;
+            font-size: 1.1em;
+        }
+
+        .attribute-item:last-child {
+            border-bottom: none;
+        }
+
+        .attribute-item span:first-child {
+            font-weight: 600;
+            color: #6A5ACD;
+        }
+
+        .attribute-item span:last-child {
+            color: #333;
+        }
+
+        .certificate-signature {
+            margin-top: 50px;
+        }
+
+        .certificate-signature p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2em;
+            color: #8A2BE2;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .certificate-signature img {
+            width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .certificate-container {
+                padding: 30px 20px;
+                max-width: 95%;
+            }
+            .certificate-header h1 {
+                font-size: 2.5em;
+            }
+            .certificate-header p {
+                font-size: 1.5em;
+            }
+            .certificate-container::before,
+            .certificate-container::after {
+                width: 70px;
+                height: 70px;
+            }
+            .attribute-item {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 0;
+            }
+            .attribute-item span:last-child {
+                margin-top: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .certificate-container {
+                padding: 20px 15px;
+            }
+            .certificate-header h1 {
+                font-size: 2em;
+            }
+            .certificate-header p {
+                font-size: 1.2em;
+            }
+            .certificate-body p {
+                font-size: 1em;
+            }
+            .certificate-container::before,
+            .certificate-container::after {
+                width: 50px;
+                height: 50px;
+            }
+            .certificate-signature p {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">
+        <div class="certificate-header">
+            <img src="/PracticasForms/img/amigositos.jpg" alt="Ositos Cariñositos">
+            <h1>CERTIFICADO DE AMISTAD</h1>
+            <p>Concedido a un verdadero amigo en Care-a-Lot</p>
+        </div>
+
+        <div class="certificate-body">
+            <p>Se certifica que <strong id="display_carebear_name_strong">[Nombre de quien reserva aquí]</strong> ha hecho una promesa especial de amistad:</p>
+            <p>"Estoy comprometido a compartir amabilidad y difundir alegría en el mundo, haciendo <strong id="display_friend_count_strong">[Número de amigos]</strong> amigos nuevos este año. Mi corazón de amistad es <strong id="display_fav_color_heart_strong">[Color del corazón]</strong>."</p>
+            
+            <p style="font-size: 1.1em; font-weight: 600; color: #8A2BE2; margin-top: 30px;">Detalles de tu promesa:</p>
+            <div class="attribute-item">
+                <span>Fecha de Promesa:</span>
+                <span id="display_pledge_date">[Fecha de la Promesa aquí]</span>
+            </div>
+            <div class="attribute-item">
+                <span>Poder de Osito Favorito:</span>
+                <span id="display_carebear_power">[Poder de Osito aquí]</span>
+            </div>
+            <div class="attribute-item">
+                <span>Compromisos Clave:</span>
+                <span id="display_pledges">[Compromisos aquí]</span>
+            </div>
+            <div class="attribute-item">
+                <span>Deseo de Amistad:</span>
+                <span id="display_wish_text">[Deseo aquí]</span>
+            </div>
+            <div class="attribute-item">
+                <span>Himno de Amistad:</span>
+                <span id="display_friendship_anthem">[Himno aquí]</span>
+            </div>
+            <div class="attribute-item">
+                <span>Nivel de Amistad:</span>
+                <span id="display_friendship_level">[Nivel de Amistad aquí]%</span>
+            </div>
+            <div class="attribute-item">
+                <span>Tu Etiqueta Secreta:</span>
+                <span id="display_friendship_tag">[Etiqueta de Amistad aquí]</span>
+            </div>
+            <p style="font-size: 0.9em; color: #999; margin-top: 20px;"></p>
+        </div>
+
+        <div class="certificate-signature">
+            <p>Con cariño,</p>
+            <p style="font-family: 'Fredoka One', cursive; color: #FF69B4; font-size: 2.2em;">Los Ositos Cariñositos</p>
+            <img src="/PracticasForms/img/gruñosito.jpg" alt="Arcoíris" style="width: 80px;">
+        </div>
+    </div>
+
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        window.onload = function() {
+            var carebearName = getUrlParameter('carebear_name');
+            var pledgeDate = getUrlParameter('pledge_date');
+            var friendCount = getUrlParameter('friend_count');
+            var favColorHeart = getUrlParameter('fav_color_heart');
+            var carebearPower = getUrlParameter('carebear_power');
+            var pledges = getUrlParameter('pledges');
+            var wishText = getUrlParameter('wish_text');
+            var friendshipAnthem = getUrlParameter('friendship_anthem');
+            var friendshipLevel = getUrlParameter('friendship_level');
+            var friendshipTag = getUrlParameter('friendship_tag');
+
+            document.getElementById('display_carebear_name_strong').textContent = carebearName || 'un amigo especial';
+            document.getElementById('display_friend_count_strong').textContent = friendCount || 'muchos';
+            document.getElementById('display_fav_color_heart_strong').textContent = favColorHeart || 'el que elijas';
+            
+            document.getElementById('display_pledge_date').textContent = pledgeDate || 'No especificado';
+            document.getElementById('display_carebear_power').textContent = carebearPower || 'No especificado';
+            if (pledges) {
+                document.getElementById('display_pledges').textContent = pledges.split(',').map(item => item.trim()).join(', ') || 'No especificado';
+            } else {
+                document.getElementById('display_pledges').textContent = 'No especificado';
+            }
+            document.getElementById('display_wish_text').textContent = wishText || 'No especificado';
+            document.getElementById('display_friendship_anthem').textContent = friendshipAnthem || 'No especificado';
+            document.getElementById('display_friendship_level').textContent = (friendshipLevel ? friendshipLevel + '%' : 'No especificado');
+            document.getElementById('display_friendship_tag').textContent = friendshipTag || 'No especificado';
+        };
+    </script>
+</body>
+</html>

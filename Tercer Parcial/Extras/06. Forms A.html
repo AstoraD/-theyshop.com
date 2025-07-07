@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mensaje Enviado!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F0F8FF;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .confirmation-container {
+            background-color: #FFFFFF;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #ADD8E6;
+            text-align: center;
+        }
+
+        .header-content {
+            margin-bottom: 25px;
+        }
+
+        .header-content img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .header-content h1 {
+            font-family: 'Fredoka One', cursive;
+            color: #8A2BE2;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2em;
+            color: #555;
+            margin-top: 0;
+        }
+
+        .body-content {
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .body-content p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .details-section {
+            background-color: #F8F0FF;
+            border: 1px dashed #DDA0DD;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        .details-section h3 {
+            font-size: 1.2em;
+            color: #8A2BE2;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .attribute-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px dotted #E0E0E0;
+            font-size: 1em;
+        }
+
+        .attribute-item:last-child {
+            border-bottom: none;
+        }
+
+        .attribute-item span:first-child {
+            font-weight: 600;
+            color: #6A5ACD;
+        }
+
+        .attribute-item span:last-child {
+            color: #333;
+        }
+
+        .footer-content {
+            margin-top: 40px;
+        }
+
+        .footer-content p {
+            font-family: 'Fredoka One', cursive;
+            color: #FF69B4;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .footer-content img {
+            width: 70px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .confirmation-container {
+                padding: 25px 20px;
+                max-width: 95%;
+            }
+            .header-content h1 {
+                font-size: 2.2em;
+            }
+            .header-content p {
+                font-size: 1em;
+            }
+            .body-content p {
+                font-size: 1em;
+            }
+            .details-section {
+                padding: 15px;
+            }
+            .attribute-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .attribute-item span:last-child {
+                margin-top: 5px;
+            }
+            .footer-content p {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .confirmation-container {
+                padding: 15px;
+            }
+            .header-content h1 {
+                font-size: 1.8em;
+            }
+            .header-content img {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="header-content">
+            <img src="/PracticasForms/img/amigositos.jpg" alt="Ositos Cariñositos">
+            <h1>¡Mensaje Enviado!</h1>
+            <p>Tu Promesa de Amistad ha sido enviada con éxito a Care-a-Lot.</p>
+        </div>
+
+        <div class="body-content">
+            <p>Los Ositos Cariñositos han recibido tu valiosa información. ¡Prepárate para un mundo lleno de amabilidad y alegría!</p>
+            
+            <div class="details-section">
+                <h3>Resumen de tu Promesa:</h3>
+                <div class="attribute-item">
+                    <span>Tu nombre de Osito Cariñosito:</span>
+                    <span id="display_carebear_name">[Nombre de quien reserva aquí]</span>
+                </div>
+                <div class="attribute-item">
+                    <span>Tu correo arcoíris:</span>
+                    <span id="display_pledge_email">[Correo Electrónico aquí]</span>
+                </div>
+                <div class="attribute-item">
+                    <span>Número de amigos que harás:</span>
+                    <span id="display_friend_count">[Número de amigos aquí]</span>
+                </div>
+                <div class="attribute-item">
+                    <span>Deseo de Amistad:</span>
+                    <span id="display_wish_text">[Deseo aquí]</span>
+                </div>
+                <div class="attribute-item">
+                    <span>Nivel de Amistad:</span>
+                    <span id="display_friendship_level">[Nivel de Amistad aquí]%</span>
+                </div>
+                <p style="font-size: 0.8em; color: #999; margin-top: 15px; text-align: center;"></p>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <p>¡Gracias por tu amistad!</p>
+            <img src="/PracticasForms/img/gruñosito.jpg" alt="Arcoíris">
+        </div>
+    </div>
+
+    <script>
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        window.onload = function() {
+            var carebearName = getUrlParameter('carebear_name');
+            var pledgeEmail = getUrlParameter('pledge_email');
+            var friendCount = getUrlParameter('friend_count');
+            var wishText = getUrlParameter('wish_text');
+            var friendshipLevel = getUrlParameter('friendship_level');
+
+            document.getElementById('display_carebear_name').textContent = carebearName || 'No especificado';
+            document.getElementById('display_pledge_email').textContent = pledgeEmail || 'No especificado';
+            document.getElementById('display_friend_count').textContent = friendCount || 'No especificado';
+            document.getElementById('display_wish_text').textContent = wishText || 'No especificado';
+            document.getElementById('display_friendship_level').textContent = (friendshipLevel ? friendshipLevel + '%' : 'No especificado');
+        };
+    </script>
+</body>
+</html>
