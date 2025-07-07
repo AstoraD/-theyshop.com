@@ -1,0 +1,42 @@
+.p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+.p2::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}  
+
+.p3::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+.p4::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+
+h3::before {
+  content: url(/PracticasCSS/gif/gatoasustado.gif);
+}
+
+h4::after {
+  content: url(/PracticasCSS/gif/gatomoviendolacola.gif);
+}
+
+::marker { 
+  color: red;
+  font-size: 23px;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}

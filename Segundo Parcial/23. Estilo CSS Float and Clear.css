@@ -1,0 +1,53 @@
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: left;
+}
+
+.img3 {
+  float: none;
+}
+
+.div1, .div2, .div3 {
+  float: left;
+  padding: 15px;
+}
+
+.div1 {
+  background: red;
+}
+
+.div2 {
+  background: yellow;
+}
+
+.div3 {
+  background: green;
+}
+
+.hola1 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
+}
+
+.hola2 {
+  padding: 10px;
+  border: 3px solid red;
+}
+
+.hola3 {
+  float: left;
+  padding: 10px;
+  border: 3px solid #73AD21;
+}
+
+.hola4 {
+  padding: 10px;
+  border: 3px solid red;
+  clear: left;
+}
+
+

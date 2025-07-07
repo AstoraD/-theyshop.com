@@ -1,0 +1,50 @@
+#overflowTest {
+  background: #FFAC81;
+  color: white;
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+.div1 {
+  background-color: #FF928B;
+  width: 200px;
+  height: 65px;
+  border: 1px solid;
+  overflow: visible;
+}
+
+.div2 {
+  background-color: #FEC3A6;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.div3 {
+  background-color: #EFE9AE;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.div4 {
+  background-color: #CDEAC0 ;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.div5 {
+  background-color: #FCFAF9;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

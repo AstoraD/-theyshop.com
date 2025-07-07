@@ -1,0 +1,44 @@
+.div {
+  margin: 70px;
+  border: 1px solid #4CAF50;
+}
+
+.margenes1 {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: #3A405A;
+  color: white;
+}
+
+.margen2 {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: #AEC5EB;
+}
+
+.margen3 {
+  width: 300px;
+  margin: auto;
+  border: 1px solid #696773;
+}
+
+.margen4 {
+  border: 5px solid #C33C54;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
+
+.titulo1 {
+  margin: 0 0 50px 0;
+}
+
+.titulo2 {
+  margin: 20px 0 0 0;
+}
+

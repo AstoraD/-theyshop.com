@@ -1,0 +1,89 @@
+body {
+  font-size: 28px;
+  background-color: #fff0f3;
+  font-family: 'Poppins', sans-serif;
+  color: #d28dbf; /* Rosita fresita oscuro */
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8b7d2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #d28dbf; /* Rosita fresita oscuro */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul.topnav li a.active {
+  background-color: #ff1493;
+  color: white;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: #d28dbf; /* Rosita fresita oscuro */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe6f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #d28dbf; /* Rosita fresita oscuro */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffb3d9; /* Color rosa cuando el mouse pasa por encima */
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,40 @@
+.a1[target] {
+  background-color: #8ecae6;
+}
+
+.a2[target="_blank"] {
+  background-color: yellow;
+}
+
+[title~="capipeluche"] {
+  border: 5px solid #ffc8dd;
+}
+
+[class|="top"] {
+  background: #ff4d6d;
+}
+
+[class^="topi"] {
+  background: #b3dee2;
+}
+
+[class$="cora"] {
+  background: #c05299;
+}
+
+[class*="osito"] {
+  background: #973aa8;
+}
+
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #f3c677;
+}
+
+input[type="button"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}

@@ -1,0 +1,25 @@
+p {color: #b21e35;} 
+
+.test {color: green;} 
+p {color: #b21e35;} 
+
+#demo {color: #84dcc6;}
+.test {color: green;} 
+p {color: red;} 
+
+#demo {color: #84dcc6;}
+.test {color: green;} 
+p {color: red;} 
+
+h3 {background-color: #f7b538;}
+h3 {background-color: #db7c26;}
+
+div#myDiv {background-color: green;}
+#myDiv {background-color: yellow;}
+div[id=myDiv] {background-color: blue;}
+
+.intro {background-color: yellow;}
+h1 {background-color: red;}
+
+* {background-color: #d6d5c9;}
+h1 {background-color: red;}

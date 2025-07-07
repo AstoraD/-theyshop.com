@@ -1,0 +1,15 @@
+.div1 p {
+  background-color: yellow;
+}
+
+.div2 > p {
+  background-color: red;
+}
+
+.div3 + p {
+  background-color: blue;
+}
+
+.div4 ~ p {
+  background-color: green;
+}
