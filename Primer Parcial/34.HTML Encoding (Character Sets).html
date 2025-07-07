@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charset</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid gray;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .char {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Codificación de Caracteres en HTML</h1>
+    <p>Este documento está codificado con <strong>UTF-8</strong>. Puedes cambiar la línea <code>&lt;meta charset="..."&gt;</code> para probar con otras codificaciones.</p>
+
+    <table>
+        <caption>Comparación de Caracteres (Posiciones Comunes)</caption>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Carácter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>128</td>
+                <td>Euro (€)</td>
+                <td class="char">€</td>
+            </tr>
+            <tr>
+                <td>133</td>
+                <td>Elipsis (…)</td>
+                <td class="char">…</td>
+            </tr>
+            <tr>
+                <td>145</td>
+                <td>Comilla simple izquierda (‘)</td>
+                <td class="char">‘</td>
+            </tr>
+            <tr>
+                <td>147</td>
+                <td>Comilla doble izquierda (“)</td>
+                <td class="char">“</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>Guion largo (–)</td>
+                <td class="char">–</td>
+            </tr>
+            <tr>
+                <td>169</td>
+                <td>© Copyright</td>
+                <td class="char">©</td>
+            </tr>
+            <tr>
+                <td>174</td>
+                <td>® Registered</td>
+                <td class="char">®</td>
+            </tr>
+            <tr>
+                <td>255</td>
+                <td>ÿ (y con diéresis)</td>
+                <td class="char">ÿ</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Nota:</strong> Algunos caracteres podrían no verse correctamente si el navegador no usa la codificación adecuada.</p>
+    <p>Para probar, cambia el valor de la etiqueta <code>&lt;meta charset="..."&gt;</code> por:</p>
+    <ul>
+        <li><code>UTF-8</code> (recomendado)</li>
+        <li><code>Windows-1252</code></li>
+        <li><code>ISO-8859-1</code></li>
+    </ul>
+</body>
+</html>

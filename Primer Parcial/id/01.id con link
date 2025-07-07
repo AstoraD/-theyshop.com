@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Attribute</title>
+
+<h2 id="c10">Capítulo 10</h2>
+<p>
+Los perros pastores son razas criadas especialmente para trabajar con el ganado, guiándolo y protegiéndolo. Entre los más conocidos se encuentran el <strong>Border Collie</strong> y el <strong>Pastor Australiano</strong>, dos razas reconocidas por su inteligencia, energía y capacidad de aprendizaje.
+</p>
+
+<p>
+El <u>Border Collie</u> es considerado por muchos como el perro más inteligente del mundo. Originario de la frontera entre Escocia e Inglaterra, este perro es ágil, obediente y tiene una capacidad innata para el pastoreo. Gracias a su instinto natural, es capaz de controlar grandes grupos de ovejas con simples miradas y movimientos suaves.
+</p>
+
+<p>
+El <u>Pastor Australiano</u>, a pesar de su nombre, fue desarrollado principalmente en Estados Unidos. Es un perro muy activo y leal, ideal para trabajar en ranchos y también como compañero de familias activas. Tiene un pelaje llamativo, ojos de colores variados y una energía inagotable.
+</p>
+
+<p>
+Ambas razas requieren una gran cantidad de ejercicio físico y estimulación mental. No son ideales para personas sedentarias o que viven en espacios pequeños, ya que necesitan actividad constante para mantenerse equilibrados. También responden muy bien al entrenamiento con refuerzo positivo y disfrutan de actividades como el agility o el frisbee.
+</p>
+
+<p>
+En resumen, los perros pastores no solo son excelentes trabajadores del campo, sino que también pueden ser compañeros maravillosos si se les da el entorno y atención que necesitan. Su fidelidad, energía y capacidad para aprender los convierten en razas realmente especiales.
+</p>
+
+
+</body>
+</html>

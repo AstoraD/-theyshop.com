@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+</head>
+<body>
+ <h2 id="doggy-style">Doggy Style</h2>
+ <p><a href="https://www.youtube.com/watch?app=desktop&v=z1CSneHgd6c&t=1m00s"> Mira la nueva canción de El perro Duque</a></p>
+
+<h2>Sintaxis Enlaces HTML</h2>
+<p><a href="https://coacalco.tecnm.mx/TECNM//">Visitamos en TecNM.com!</a></p>
+
+<h2>Atributo de destino</h2>
+<a href="https://coacalco.tecnm.mx/TECNM//" target="_blank">Visitanos en TenNM.com!</a> 
+
+<p>Si el target="_blank", el link se abrirá en una nueva ventana del 
+navegador.</p>
+
+<a href="https://coacalco.tecnm.mx/TECNM//" target="_parent">Visitanos en TenNM.com!</a> 
+
+<p>Si el target="_parent", el link se abrirá en la ventana principal del 
+navegador.</p>
+
+<h2>URL absolutas vs. URL relativas</h2>
+
+<h3>Absolute URLs</h3>
+<p><a href="https://coacalco.tecnm.mx/TECNM//" target="_blank">TecNM</a></p>
+<p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+
+<h>Relative URLs</h3>
+<p><a href="/PracticasHTML/img/">Imagenes</a></p>
+<p><a href="/PracticasHTML/08.Quotation%20and%20Citation%20Elements.html">Quation and Citation</a></p>
+
+<h3>Imagen como enlace</h3>
+<p>La imagen de abajo nos llevará a una canción de 31 minutos, da click para ir a verlo.</p>
+
+<a href="https://www.youtube.com/watch?v=M9P39z2kkAY"><img src="img/parque de diversiones 31 minutos.jpg" alt="31 minutos, Parque de diversiones" style="width:60px;height:60px;"></a>
+
+<h2>Enlace a una dirección de correo electrónico</h2>
+<p><a href="mailto:202221521@tesco.edu.mx">Mandar email</a></p>
+
+<h2>Botón como enlace</h2>
+<p>Da click sobre el botón para ir a otra cación de 31 minutos</p>
+<button onclick="document.location='https://www.youtube.com/watch?v=c5jFlLK6QgI'">Me cortaron mal el pelo</button>
+
+<h2>Títulos de enlaces</h2>
+<a href="https://www.youtube.com/watch?v=0HoxZKSD-_c&list=PLVI9tQggdGtHjPkCPD5X5EsOYk1rA-gew&index=3" title="Señora, devúelvame la pelota o si no no sé que haré">Otra canción de 31 minutos</a>
+
+<h2>URL completa para vincular a una página web</h2>
+<p><a href="http://localhost:8080/PracticasHTML/10.%20HTML%20Colors.html">HTML Colors</a></p>
+
+<h2>Enlace a una página ubicada en la carpeta html del sitio web actual</h2>
+<p><a href="/PracticasHTML/01.HTML%20Basic.html">HTML Basic</a></p>
+<h2>Colores de enlace</h2>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visitado{
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+<h2>Marcadores HTML</h2>
+ <a href="#doggy-style">Ir a Doggy Style</a>
+</html>
+</body>

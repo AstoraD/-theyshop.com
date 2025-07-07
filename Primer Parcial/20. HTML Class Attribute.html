@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Attribute</title>
+  <style>
+    .pais {
+      background-color: #d7d498;
+      color: grey;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+    .note {
+      font-size: 120%;
+      color: red;
+    }
+    .tablita {
+  background-color: #d2b876;
+  color: white;
+  padding: 10px;
+}
+.hola {
+  background-color: #ff0080;
+  color: white;
+  padding: 10px;
+} 
+
+.main {
+  text-align: center;
+}
+.dosydos {
+  background-color: #32b982;
+  color: white;
+  padding: 10px;
+} 
+</style>
+
+</style>
+  </head>
+
+  <body>
+  <h2>El atributo class</h2>
+  <p>Se utiliza para asignar un nombre de clase a un elemento HTML, puede ser cualquier elemento.</p>
+
+  <h3>Países con maravillas del mundo.</h3>
+
+  <div class="pais">
+    <h2>México</h2>
+    <p>En México tenemos Chichen Itzá.</p>
+  </div> 
+
+  <div class="pais">
+    <h2>Italia</h2>
+    <p>En Italia esta el Coliseo Romano.</p>
+  </div>
+
+  <div class="pais">
+    <h2>Brasil</h2>
+    <p>En Brasil está el Cristo Redentor.</p>
+</div>
+
+<h2>Class con Span</h2>
+<p>En el siguiente ejemplo, tenemos dos elementos "spanW con un atributo de clase con el valor "note". Ambos elementos "span" tendrán el mismo estilo según la definición de estilo .note en la sección de encabezado.</p>
+
+<h1>Querido profesor<span class="note"> paseme</span> porfi</h1>
+<p>De lo contrario voy a <span class="note">llorar</span> :(</p>
+
+<h2>La sintaxis de class</h2>
+<p>Para crear una clase, escribimos un punto (.) seguido del nombre de la clase. Luego, defina las propiedades CSS entre llaves {}</p>
+
+<h2 class="tablita">Brinca la tablita</h2>
+<p>Yo ya la brinque.</p>
+
+<h2 class="tablita">Brincala de nuevo</h2>
+<p>Yo ya me canse.</p>
+
+<h2>Clases multiples</h2>
+<p>Los elementos HTML pueden pertenecer a más de una clase. Para definir varias clases, separamos los nombres de las clases con un espacio. El elemento se ajustará al estilo de todas las clases especificadas.</p>
+
+<p>Por ejemplo, todos los h2 pertenecen a la clase "tablita". Adicionalmente, London también pertenece a la clase "main", que se encarga de alinear el texto.</p>
+
+<h2 class="hola main">Barney es un gran dinosaurio</h2>
+<h2 class="hola">que vive en nuestra mente y cuando se hace grande</h2>
+<h2 class="hola">es realmente sorprendente</h2>
+
+<h3>¿Sabías de diferentes elementos pueden compartir la misma clase aunque no tengan el mismo nombre?</h3>
+<p>En en siguiente ejemplo tanto como "h2" y "p" comparten la misma clase</p>
+
+<h4 class="dosydos">Dos y dos son cuatro, cuatro y dos son seis,</h4>
+<p class="dosydos">seis y dos son ocho y ocho dieciséis.</p>
+
+<h2>Uso de la clase Attribute en JavaScript</h2>
+<p>JavaScript también puede utilizar el nombre de la clase para realizar determinadas tareas para elementos específicos. JavaScript puede acceder a elementos con un nombre de clase específico con el método "getElementsByClassName()"</p>
+
+<p>Haga click en el boton para ocultar todos los elementos con la clase "pais":</p>
+
+<button onclick="myFunction()">Esconde los paises</button>
+
+<h2 class="pais">México</h2>
+<p>En México bailamos el "Jarabe Tapatío".</p>
+
+<h2 class="pais">Argentina</h2>
+<p>En Argentina bailan "Tango".</p>
+
+<h2 class="pais">Brasil</h2>
+<p>En Brasil bailan "Samba".</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("pais");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

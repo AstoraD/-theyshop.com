@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML JavaScript</title>
+</head>
+
+<body>
+  <img id="miGato" src="http://localhost:8080/PracticasHTML/img/gatofeliz.jpeg" width="500" height="500">
+<script>
+function triste() {
+
+  document.getElementById('miGato').src = "http://localhost:8080/PracticasHTML/img/gatotriste.jpeg";
+}
+function feliz() {
+
+  document.getElementById('miGato').src = "http://localhost:8080/PracticasHTML/img/gatofeliz.jpeg";
+}
+</script>
+<p>
+  <button type="button" onclick="triste()">Triste</button>
+  <button type="button" onclick="feliz()">Feliz</button>
+</p>
+
+
+</body>
+</html>

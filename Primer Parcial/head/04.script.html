@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The head element</title>
+
+  <script>
+    const frases = [
+      "Se te nota",
+      "Al hablarme",
+      "Al mirarme",
+      "No puede engañarme"
+    ];
+    let index = 0;
+    function myFunction() {
+      document.getElementById("demo").innerHTML = frases[index];
+      index = (index + 1) % frases.length;
+    }
+
+  </script>
+
+  <body>
+   
+   <h2>¿Porqué te demoras?</h2>
+   <p id="demo">Se que quieres</p>
+   <button type="button" onclick="myFunction()">Intentalo!</button>
+
+
+  </body>
+</html>

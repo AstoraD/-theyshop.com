@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+  <style>
+    table, th, td {
+  border:1px solid black;
+    }
+
+    .table1, .table1 th, .table1 td {
+      border: 1px solid black;
+  border-collapse: collapse;
+    }
+
+    .table2, .table2 th, .table2 td{
+      border: 1px solid white;
+  border-collapse: collapse;
+  background-color: #96D4D4;
+    }
+
+    .table3, .table3 th, .table3 td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.table4, .table4 th, .table4 td {
+  border-style: dotted;
+}
+.table5, .table5 th, .table5 td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+.table6, .table6 th, .table6 td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+.table7, .table7 th, .table7 td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+.table8, .table8 th, .table8 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table9, .table9 th, .table9 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table10, .table10 th, .table10 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table10 th {
+  text-align: right;
+}
+.table11, .table11 th, .table11 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table12, .table12 th, .table12 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table12 th, .table12 td {
+  padding: 5px;
+  text-align: left;
+}
+.table13, .table13 th, .table13 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table13 th, .table13 td {
+  padding: 15px;
+}
+.table 14, .table14 th, .table14 td {
+  border: 1px solid black;
+}
+.table14 {
+  border-spacing: 30px;
+}
+.table15, .table15 th, .table15 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table16, .table16 th, .table16 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table17 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table17 th, .table17 td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table17 tr:nth-child(odd) {
+  background-color: #99EE90;
+}
+.table18, .table18 th, .table18 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table18 th:nth-child(even),.table18 td:nth-child(even) {
+  background-color:#F8E5B7;
+}
+.table19, .table19 th, .table19 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table19 tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.table19 th:nth-child(even),.table19 td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+.table20 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table20 th, .table20 td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+.table20 tr:hover {background-color: #D6EEEE;}
+
+.table21, .table21 th, .table21 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table22, .table22 th, .table22 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table23, .table23 th, .table23 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table24, .table24 th, .table24 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  </style>
+</head>
+<body>
+
+<h1>Tablas HTML</h1>
+
+<h2>Tabla Basica HTML</h2>
+<table style="width:100%">
+  <tr>
+    <th>Materia</th>
+    <th>Profesor</th>
+    <th>Aula</th>
+  </tr>
+  <tr>
+    <td>Redes de computadoras</td>
+    <td>Raúl Sandoval</td>
+    <td>Laboratorio digital-A2</td>
+  </tr>
+  <tr>
+    <td>Programación WEB</td>
+    <td>Alejandro Pineda</td>
+    <td>Laboratorio digital-A1</td>
+  </tr>
+</table>
+
+<h2>Celdas de la Tabla</h2>
+
+<table style="width:100%">
+  <tr>
+    <td>María</td>
+    <td>Marco</td>
+    <td>Lety</td>
+      </tr>
+</table>
+
+<h2>Filas de la Tabla</h2>
+
+<table style="width:100%">
+  <tr>
+    <td>María</td>
+    <td>Marco</td>
+    <td>Lety</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>20</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<h2>Encabezados de la Tabla</h2>
+<table style="width:100%">
+  <tr>
+    <th>Mujer</th>
+    <th>Hombre</th>
+    <th>Mujer</th>
+  </tr>
+  <tr>
+    <td>María</td>
+    <td>Marco</td>
+    <td>Lety</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>20</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<h1>Bordes de Tabla</h1>
+
+<h2>Bordes de tabla contraídos</h2>
+<table class="table1" style="width:100%">
+   <tr>
+    <th>Nombre</th>
+    <th>Materia</th>
+    <th>Calificación</th>
+  </tr>
+  <tr>
+    <td>Ana López</td>
+    <td>Matemáticas</td>
+    <td>9.5</td>
+  </tr>
+  <tr>
+    <td>Carlos Pérez</td>
+    <td>Historia</td>
+    <td>8.0</td>
+  </tr>
+  <tr>
+    <td>María Torres</td>
+    <td>Inglés</td>
+    <td>9.0</td>
+  </tr>
+</table>
+
+<h2>Estilos de bordes de tabla</h2>
+<table class="table2" style="width:100%">
+   <tr>
+    <th>Producto</th>
+    <th>Precio</th>
+    <th>Disponibilidad</th>
+  </tr>
+  <tr>
+    <td>Laptop</td>
+    <td>$800</td>
+    <td>Disponible</td>
+  </tr>
+  <tr>
+    <td>Teléfono</td>
+    <td>$500</td>
+    <td>Agotado</td>
+  </tr>
+  <tr>
+    <td>Monitor</td>
+    <td>$300</td>
+    <td>Disponible</td>
+  </tr>
+</table>
+
+<h2>Bordes de mesa redonda</h2>
+<table class="table3" style="width:100%">
+ <tr>
+    <th>Nombre</th>
+    <th>Departamento</th>
+    <th>Cargo</th>
+  </tr>
+  <tr>
+    <td>José Ramírez</td>
+    <td>Recursos Humanos</td>
+    <td>Gerente</td>
+  </tr>
+  <tr>
+    <td>Elena Suárez</td>
+    <td>Ventas</td>
+    <td>Ejecutiva</td>
+  </tr>
+  <tr>
+    <td>Pedro Castillo</td>
+    <td>IT</td>
+    <td>Desarrollador</td>
+  </tr>
+</table>
+
+<h3>Borde omitido de la tabla</h3>
+<p><a href="/PracticasHTML/tablas/16.1%20Borde%20omitido%20de%20la%20tabla.html">Tabla sin borde</a></p>
+
+<h2>Tabla de bordes puntuados</h2>
+<table class="table4" style="width:100%">
+ <tr>
+    <th>Hora</th>
+    <th>Lunes</th>
+    <th>Martes</th>
+    <th>Miércoles</th>
+    <th>Jueves</th>
+    <th>Viernes</th>
+  </tr>
+  <tr>
+    <td>8:00 - 9:00</td>
+    <td>Matemáticas</td>
+    <td>Historia</td>
+    <td>Física</td>
+    <td>Inglés</td>
+    <td>Educación Física</td>
+  </tr>
+  <tr>
+    <td>9:00 - 10:00</td>
+    <td>Química</td>
+    <td>Biología</td>
+    <td>Geografía</td>
+    <td>Literatura</td>
+    <td>Arte</td>
+  </tr>
+</table>
+
+<h2>Color del borde</h2>
+
+<p><a href="/PracticasHTML/tablas/16.2%20Color%20del%20borde.html">Color del borde</a></p>
+
+<h1>Tamaños de las tablas</h1>
+
+<h2>Ancho de tabla</h2>
+<table class="table5" style="width:50%">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th> 
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+<h2>Ancho de columna de tabla</h2>
+
+<table class="table6" style="width:80%">
+    <tr>
+   <tr>
+    <th style="width:70%">Producto</th>
+    <th>Precio</th>
+    <th>Disponibilidad</th>
+  </tr>
+  <tr>
+    <td>Laptop</td>
+    <td>$800</td>
+    <td>Disponible</td>
+  </tr>
+  <tr>
+    <td>Teléfono</td>
+    <td>$500</td>
+    <td>Agotado</td>
+  </tr>
+  <tr>
+    <td>Monitor</td>
+    <td>$300</td>
+    <td>Disponible</td>
+  </tr>
+</table>
+
+<h2>Altura de la fila de la tabla</h2>
+<table class="table7" style="width:80%">
+    <tr>
+   <tr>
+    <th>Producto</th>
+    <th>Precio</th>
+    <th>Disponibilidad</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Laptop</td>
+    <td>$800</td>
+    <td>Disponible</td>
+  </tr>
+  <tr>
+    <td>Teléfono</td>
+    <td>$500</td>
+    <td>Agotado</td>
+  </tr>
+  <tr>
+    <td>Monitor</td>
+    <td>$300</td>
+    <td>Disponible</td>
+  </tr>
+</table>
+
+<h1>Encabezados de tabla</h1>
+<table class="table8" style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<h2>Encabezados de tablas verticales</h2>
+<table class="table9" style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Apellido</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Edad</th>  
+    <td>50</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<h2>Alinear encabezados de tabla</h2>
+<table class="table10" style="width:100%">
+  <tr>
+    <th>Materia</th>
+    <th>Profesor</th>
+    <th>Aula</th>
+  </tr>
+  <tr>
+    <td>Redes de computadoras</td>
+    <td>Raúl Sandoval</td>
+    <td>Laboratorio digital-A2</td>
+  </tr>
+  <tr>
+    <td>Programación WEB</td>
+    <td>Alejandro Pineda</td>
+    <td>Laboratorio digital-A1</td>
+  </tr>
+</table>
+
+<h2>Encabezado para múltiples columnas</h2>
+<table class="table11" style="width:100%">
+  <tr>
+    <th colspan="2">Animal</th>
+    <th>Clase</th>
+  </tr>
+  <tr>
+    <td>Perro</td>
+    <td>Hamster</td>
+    <td>Omnívoro</td>
+  </tr>
+  <tr>
+    <td>Tiburón</td>
+    <td>Leones</td>
+    <td>Carnívoros</td>
+  </tr>
+</table>
+
+<h2>Título de la tabla</h2>
+<table class="table12" style="width:100%">
+  <caption>Ahorros del mes</caption>
+  <tr>
+    <th>Mes</th>
+    <th>Ahorro</th>
+  </tr>
+  <tr>
+    <td>Enero</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Febrero</td>
+    <td>$50</td>
+  </tr>
+   <tr>
+    <td>Marzo</td>
+    <td>$600</td>
+  </tr>
+ <tr>
+    <td>Abril</td>
+    <td>$1000</td>
+  </tr>
+</table>
+
+<h1>Relleno y espaciado de tablas</h1>
+
+<h2>Relleno de celdas</h2>
+<table class="table13" style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th> 
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Cristina</td>
+    <td>Torres</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>José Antonio</td>
+    <td>Gutierrez</td>
+    <td>52</td>
+  </tr>
+  <tr>
+    <td>Joshua</td>
+    <td>Naranjo</td>
+    <td>22</td>
+  </tr>
+</table>
+
+<h2>Espaciado de celdas</h2>
+<table class="table14" style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th> 
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Cristina</td>
+    <td>Torres</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>José Antonio</td>
+    <td>Gutierrez</td>
+    <td>52</td>
+  </tr>
+  <tr>
+    <td>Joshua</td>
+    <td>Naranjo</td>
+    <td>22</td>
+  </tr>
+</table>
+
+<h1>Colspan y Rowspan de tabla</h1>
+
+<h2>Tabla HTML-Colspan</h2>
+<table class="table15" style="width:100%">
+  <tr>
+    <th colspan="2">Nombre</th>
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+<h2>Tabla HTML-Rowspan</h2>
+<table class="table16" style="width:100%">
+  <tr>
+    <th>Nombre</th>
+    <td>Ana Karen</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Teléfono</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+
+<h1>Estilos de tablas</h1>
+
+<h2>Tabla HTML-Rayas de cebra</h2>
+<table class="table17">
+  <tr>
+  <th>Nombre</th>
+  <th>Apellidos</th>
+  <th>Puntos</th>
+  </tr>
+  <tr>
+  <td>Tulio</td>
+  <td>Triviño</td>
+  <td>$10000</td>
+  </tr>
+  <tr>
+  <td>Juan Carlos</td>
+  <td>Bodoque</td>
+  <td>$10</td>
+  </tr>
+  <tr>
+  <td>Juanin</td>
+  <td>Juan Harry</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Patana</td>
+  <td>Tufillo</td>
+  <td>$500</td>
+  </tr>
+</table>
+
+<h2>Tabla HTML-Rayas verticales de cebra</h2>
+<table class="table18" style="width:100%">
+  <tr>
+    <th>Tulio</th>
+    <th>Bodoque</th>
+    <th>Juanin</th>
+    <th>Patana</th>
+    <th>Gualipolo</th>
+    <th>Mario Hugo</th>
+    <th>Policarpo</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<h2>Combinar rayas verticales y horizontales</h2>
+<table class="table19" style="width:100%">
+  <tr>
+    <th>Tulio</th>
+    <th>Bodoque</th>
+    <th>Juanin</th>
+    <th>Patana</th>
+    <th>Gualipolo</th>
+    <th>Mario Hugo</th>
+    <th>Policarpo</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<h2>Divisores horizontales</h2>
+<p><a href="/PracticasHTML/tablas/16.3%20Divisores%20horizontales.html">Divisores horizontales</a></p>
+
+<h2>Mesa flotante</h2>
+<p>Mueva el ratón sobre las filas de la tabla para ver el efecto</p>
+<table class="table20">
+  <tr>
+  <th>Nombre</th>
+  <th>Apellidos</th>
+  <th>Puntos</th>
+  </tr>
+  <tr>
+  <td>Tulio</td>
+  <td>Triviño</td>
+  <td>$10000</td>
+  </tr>
+  <tr>
+  <td>Juan Carlos</td>
+  <td>Bodoque</td>
+  <td>$10</td>
+  </tr>
+  <tr>
+  <td>Juanin</td>
+  <td>Juan Harry</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Patana</td>
+  <td>Tufillo</td>
+  <td>$500</td>
+  </tr>
+</table>
+
+<h1>Grupo de columnas de tablas HTML</h1>
+<p>Agregue un grupo de columnas con un elemento colgroup que abarque dos columnas para definir un estilo para dos columnas:</p>
+<table class="table21" style="width:100%">
+  <colgroup>
+  <col span="2" style="background-color: #FFB347">
+</colgroup>
+  <tr>
+    <th>Tulio</th>
+    <th>Bodoque</th>
+    <th>Juanin</th>
+    <th>Patana</th>
+    <th>Gualipolo</th>
+    <th>Mario Hugo</th>
+    <th>Policarpo</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+<h2>Múltiples elementos Col</h2>
+<p>Agregue multiple elementos col en el colgroup</p>
+<table class="table22" style="width: 100%;">
+  <colgroup>
+    <col span="2" style="background-color: #CCA9DD">
+    <col span="3" style="background-color: pink">
+  </colgroup>
+<tr>
+<th>LUNES</th>
+<th>MARTES</th>
+<th>MIÉRCOLES</th>
+<th>JUEVES</th>
+<th>VIERNES</th>
+<th>SABADO</th>
+<th>DOMINGO</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+<h2>Grupos de columnas vacíos</h2>
+<p>Agregue elementos col "vacíos" que representan las columnas anteriores a las columnas que desea diseñar:</p>
+<table class="table23" style="width: 100%;">
+  <colgroup>
+    <col span="3">
+    <col span="2" style="background-color: pink">
+  </colgroup>
+<tr>
+<th>LUNES</th>
+<th>MARTES</th>
+<th>MIÉRCOLES</th>
+<th>JUEVES</th>
+<th>VIERNES</th>
+<th>SABADO</th>
+<th>DOMINGO</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+<h2>Ocultar columnas</h2>
+<p>Puede ocultar columnas específicas con la propiedad de visibility:</p>
+<table class="table24" style="width: 100%;">
+<colgroup>
+    <col span="2">
+    <col span="3" style="visibility: collapse">
+  </colgroup>
+  <tr>
+<th>LUNES</th>
+<th>MARTES</th>
+<th>MIÉRCOLES</th>
+<th>JUEVES</th>
+<th>VIERNES</th>
+<th>SABADO</th>
+<th>DOMINGO</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+
+</body>
+</html>

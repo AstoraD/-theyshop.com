@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Images</title>
+<style>
+img {
+  width: 100%;
+}
+p {
+background-image: url('img/fondo 1.jpg');
+}
+body {
+  background-image: url('gif/pooh.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<h2>Beto y Enrique</h2>
+<img src="img/beto y enrique.jpg" alt="Beto y Enrique" width="400" height="333">
+
+<h2>Abelardo y Big Bird</h2>
+<img src="img/abelardo y bigbird.jpg" alt="Abelardo y Big Bird" width="500" height="600">
+
+<h2>Elmo y Dorothy</h2>
+<img src="img/elmo y dorothy.jpg" alt="Elmo y Dorothy" width="460" height="345">
+
+<h2>El monstro come galletas atributo sr</h2>
+<p>El monstruo come galletas es un monstruo voraz y uno de los personajes principales de Sesame Street. Cubierto de pelo azul y con un par de ojos saltones, Cookie Monster tiene un apetito insaciable. Como su nombre lo indica, su antojo principal son las galletas, pero puede (y muchas veces lo hace) consumir cualquier cosa, desde manzanas y pastel hasta letras, cubiertos y tapacubos. Cuando el Monstruo de las Galletas come algo, hace un "ruido" de masticar muy fuerte y marcado, a menudo interpretado como "nom-nom-nom-nom ..."</p>
+
+<img src="img/el monstruo come galletas.jpg" alt="El monstruo come galletas" width="460" height="345">
+
+<h2>Abelardo y Big Bird atributo alt</h2>
+<p>En la versión original de Estados Unidos, Big Bird es un pájaro amarillo de gran tamaño, conocido por su carácter amable y su curiosidad infantil. Sin embargo, en México, este personaje fue adaptado como Abelardo Montoya. Abelardo es la versión mexicana de Big Bird, y en el universo de Plaza sésamo es su primo, y al igual que el personaje original es un ave gigante con características humanas. Abelardo, a diferencia de Big Bird, es una adaptación de un gran perico con plumas verdes, rojas y rosadas.</p>
+
+<img src="img/abelardo y bigbird en hollywood.jpg" alt="Abelardo y Big Bird en hollywood" width="460" height="345">
+
+<h2>Tamaño de la imagen width y height</h2>
+<p>Dorothy es el pez dorado mascota de Elmo que apareció por primera vez en el segmento " El mundo de Elmo " de Barrio Sésamo . A los seis años (en la edad de los peces dorados), es buena amiga de Elmo, quien puede entender lo que dice a través de su pecera. Dorothy es curiosa y posee una imaginación muy activa.</p>
+
+<img src="img/elmo y dorothy.jpg" alt="Elmo" style="width:500px;height:600px;">
+
+<h2>Atributos Width/Height o Style</h2>
+<p>La primera imagen usa el atributo width en 128 píxeles, pero el estilo en la sección de encabezado lo anula y lo establece al 100%</p>
+<img src="img/parque de diversiones 31 minutos.jpg" alt="Parque de diversiones" width="12" height="128">
+
+<p>La segunda imagen usa el atributo de style para establecer el ancho a 128 pixeles, esto no será anulado pr el estilo en la sección de encabezado</p>
+<img src="img/parque de diversiones 31 minutos.jpg" alt="Parque de diversiones" style="width:128px;height:128px;">
+
+<h2>Imagenes en otro servidor o sitio web</h2>
+<img src="https://i.pinimg.com/736x/9b/8b/43/9b8b43d5dc4dda68faf2ab55e3a01137.jpg" alt="Enrique" style="width:104px;height:142px;">
+
+<h2>Imagenes animadas</h2>
+<img src="gif/lola.gif" alt="Lola" style="width:104px;height:142px;">
+
+<h2>Imagen como link</h2>
+<a href="https://www.dailymotion.com/video/x8vkxuw">
+<img src="img/plaza sesamo.jpg" alt="Plaza Sesamo" style="width:104px;height:142px;">
+</a>
+
+<h2>Imagen flotante</h2>
+<p1><strong>Colocar la imagen a la derecha:</strong></p1>
+
+<p>
+<img src="gif/lola.gif" alt="Lola" style="float:right;width:42px;height:42px;">
+A Lola se le apareció un camello en el desierto
+</p>
+
+<p1><strong>Colocar imagen a la izquierda:</strong></p1>
+<p>
+<img src="gif/lola.gif" alt="Lola" style="float:left;width:42px;height:42px;">
+A Lola se le apareció un camello en el desierto
+</p>
+<br>
+
+<h2>HTML Image Maps</h2>
+<p>Da click sobre Abelardo o Big Bird para conocer más sobre ellos:</p>
+
+<img src="img/abelardo y bigbird.jpg" alt="big bird" usemap="#abelardo" style="width:500px;height:600px;">
+
+<map name="abelardo">
+  <area shape="rect" coords="175, 110, 225, 170" alt="Big Bird" href="/PracticasHTML/inf/Big%20Bird.html">
+  <area shape="rect" coords="375, 150, 425, 210" alt="Abelardo" href="/PracticasHTML/inf/Abelardo.html">
+</map>
+
+<h2>Imagenes de fondo del parráfo</h2>
+<p style="background-image: url('img/fondo 1.jpg');">
+
+<h2>Imagen de fondo</h2>
+
+<h2>Estiramiento de fondo</h2>
+
+<h2>Elemento HTML picture</h2>
+<p>Mostrar diferentes imágenes para diferentes tamaños de pantalla</p>
+<picture>
+  <source media="(min-width: 650px)" srcset="img/duoroblox.jpeg">
+  <source media="(min-width: 450px)" srcset="img/calvo.jpg">
+  <img src="img/pou.jpeg" style="width:auto;">
+</picture>
+<br>
+<p>El navegador utilizará el primer formato  de imagen que reconozca</p>
+<picture>
+  <source srcset="img/pou.jpg">
+  <source srcset="img/duoroblox.jpg">
+  <img src="img/pou.jpg" alt="Pou" style="width:auto;">
+</picture>
+
+</html>
+</body>

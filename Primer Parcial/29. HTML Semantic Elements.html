@@ -1,0 +1,158 @@
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semantic Elements</title>
+  <style>
+  body {
+      background-color: #fffafc;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #a672b2;
+    }
+
+    .all-browsers {
+      background-color: #fcefee;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .all-browsers h1 {
+      color: #cdb4db;
+      text-align: center;
+    }
+
+    .browser {
+      background-color: #e5e5f7;
+      border: 1px solid #dcd6f7;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    .browser h2 {
+      color: #8ecae6;
+    }
+
+    .browser p {
+      color: #6c6c6c;
+    }
+</style>
+</head>
+
+<body style="background-color: #fffafc; font-family: sans-serif;">
+  
+  <h1 style="color: #a672b2;">Elementos semáticos HTML</h1>
+  <p style="color: #6c6c6c;">Los elementos semánticos son etiquetas HTML que transmiten el significado o propósito del contenido que encapsulan, es decir, proporcionan un contexto más claro sobre el tipo de contenido que contienen</p>
+
+  <h2 style="color: #8ecae6;">Elementos "Section"</h2>
+  <p style="color: #6c6c6c;">Define una sección en un documento.</p>
+
+  <section>
+    <h3 style="color: #ffb5a7;">¿Y dónde están las rubias?</h3>
+    <p style="color: #7a7a7a;">"¿Y dónde están las rubias?" es una película estadounidense de comedia de 2004, dirigida por Keenen Ivory Wayans, protagonizada por Shawn Wayans y Marlon Wayans.</p>
+  </section>
+
+  <section>
+    <h3 style="color: #ffb5a7;">Producción</h3>
+    <p style="color: #7a7a7a;">La película fue producida por Revolution Studios y distribuida por Sony Pictures Entertainment.</p>
+  </section>
+
+  <h2 style="color: #8ecae6;">Elemento "Article"</h2>
+  <p style="color: #6c6c6c;">Especifica un contenido independiente y autónomo</p>
+
+  <article>
+    <h3 style="color: #cdb4db;">Netflix</h3>
+    <p style="color: #7a7a7a;">Netflix es una plataforma de streaming que ofrece películas, series y documentales. Fue fundada en 1997 y hoy tiene millones de suscriptores en todo el mundo.</p>
+  </article>
+
+  <article>
+    <h3 style="color: #cdb4db;">Spotify</h3>
+    <p style="color: #7a7a7a;">Spotify es un servicio de música en streaming lanzado en 2008. Permite a los usuarios escuchar millones de canciones y crear sus propias listas de reproducción.</p>
+  </article>
+
+  <article>
+    <h3 style="color: #cdb4db;">YouTube</h3>
+    <p style="color: #7a7a7a;">YouTube es una plataforma para compartir videos creada en 2005. Es utilizada por creadores de contenido y millones de usuarios diariamente en todo el planeta.</p>
+  </article>
+
+  <h2>Elemento article con Style</h2>
+  <article class="all-browsers">
+    <h1>Personajes de Sanrio</h1>
+
+    <article class="browser">
+      <h2>Hello Kitty</h2>
+      <p>Hello Kitty es una adorable gatita blanca con un moño rojo. Fue creada en 1974 por Sanrio y se ha convertido en un ícono global de ternura y estilo kawaii.</p>
+    </article>
+
+    <article class="browser">
+      <h2>My Melody</h2>
+      <p>My Melody es una conejita dulce que adora hornear y ayudar a sus amigos. Usa una capucha rosada y es la mejor amiga de Hello Kitty.</p>
+    </article>
+
+    <article class="browser">
+      <h2>Kuromi</h2>
+      <p>Kuromi es la contraparte traviesa de My Melody. Aunque tiene una apariencia ruda con su gorro negro con calavera rosa, también tiene un lado tierno y divertido.</p>
+    </article>
+  </article>
+
+  <h2>Elemento "Header"</h2>
+  <p>El elemento "header" representa un contenedor para contenido introductorio o un conjunto de enlaces de navegación.</p>
+
+  <article>
+  <header>
+    <h2 style="color: #a8d8a3; text-align: center;">Keropi</h2>
+    <p style="color: #8ebc8e; text-align: center; font-size: 1.2em;">¿Quién es Keropi?</p>
+  </header>
+  <p>Keropi es un personaje de Sanrio, conocido por ser una rana verde alegre y simpática que vive en una tranquila zona cercana a un lago. Keropi es conocido por su personalidad optimista y su amor por la música y la diversión.</p>
+</article>
+
+<h2>Elemento "footer"</h2>
+<p>Define un pie de página para un documento o sección</p>
+
+<footer style="color: #a5ffee">
+  <p>Autor: Mary Sam</p>
+  <p><a href="mailto: maria.naranjo1133@gmail.com">Correo</a></p>
+</footer>
+
+<h2>Elemento "nav"</h2>
+<p>Define un conjunto de enlaces de navegación</p>
+<nav>
+  <a href="/PracticasHTML/10.%20HTML%20Colors.html">Colors</a> |
+  <a href="/PracticasHTML/13.HTML%20Images.html">Images</a> |
+  <a href="/PracticasHTML/16.HTML%20Tables.html">Tables</a> |
+  <a href="/PracticasHTML/17.HTML%20List.html">List</a>
+</nav>
+
+<h2>Elemento "aside"</h2>
+<p>Define algún contenido además del contenido en el que está ubicado</p>
+<<p style="color: #6c6c6c; font-size: 1.1em;">Este verano, mi familia y yo visitamos el parque Sanrio. El clima estaba perfecto, y Sanrio fue increíble. ¡Pasamos un verano genial juntos!</p>
+
+<aside style="background-color: #e1f7d5; border-left: 5px solid #8ecae6; padding: 15px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+  <h4 style="color: #8ecae6; text-align: center; font-size: 1.3em;">Personajes de Sanrio</h4>
+  <p style="color: #6c6c6c; font-size: 1.1em;">Sanrio es el hogar de varios personajes adorables que han conquistado corazones alrededor del mundo. Entre los más conocidos, además de Hello Kitty, están My Melody, Keropi, Kuromi, y Chococat. Cada uno tiene su propia personalidad y estilo único, lo que los hace especiales para todos los fans de la cultura kawaii.</p>
+</aside>
+
+<h2>Elementos "figure" y "figcaption"</h2>
+<p>La etiqueta "figure" especifica contenido autónomo, como ilustraciones, diagramas, fotografías, listas de códigos, etc.  
+La etiqueta "figcaption" define el título de un elemento con la etiqueta "figure".</p>
+
+<h2>Pompompurin</h2>
+
+<p>Pompompurin es un personaje ficticio de Sanrio, un perro Golden Retriever que usa una boina marrón. Se introdujo en 1996. Es conocido por ser tranquilo y le encanta la siesta, salir con amigos y comer postres. </p>
+
+<figure>
+  <img src="img/pompompurin.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Pompompurin.</figcaption>
+</figure>
+
+
+
+
+
+
+</body>

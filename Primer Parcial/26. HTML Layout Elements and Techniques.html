@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Layout Elements and Techniques</title>
+
+  <body>
+    <h2>Elementos y técnicas de diseño HTML</h2>
+ <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #b2a981;
+  color: #544c24;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  float: left;
+  width: 13%;
+  background:#9b9163;
+  padding: 20px;
+  height: 100vh; 
+  position: sticky;
+  top: 0;
+}
+
+section {
+  overflow: hidden; 
+}
+
+.article-container {
+  float: left;
+  width: 70%;
+  padding: 20px;
+}
+
+article {
+  background-color: #f0e6b8;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  nav, .article-container {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+  <h2>CSS Layout Float</h2>
+  <p>En este ejemplo, hemos creado un encabezado, dos columnas/cuadros y un pie de pagina. En pantallas más pequeñas, las columnas se superpondrán</p>
+  <p>Cambiamos el tamaño de la ventana del navegador para ver el efecto responsivo</p>
+
+  <header>
+    <h2>Perros</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#schnauzer">Schnauzer</a></li>
+        <li><a href="#gran-danes">Gran Danes</a></li>
+        <li><a href="#san-bernardo">San Bernardo</a></li>
+      </ul>
+    </nav>
+
+    <article id="schnauzer">
+      <h1>Schnauzer</h1>
+         <p>El Schnauzer estándar es un perro robusto y musculoso de tamaño mediano que tiene unas cejas y bigotes prominentes. El pelaje puede ser negro o gris. Los machos adultos miden idealmente unos 48 cm de altura y pesan 18 kilos. Las hembras adultas suelen medir 45,7 cm de media y pesan 16 kg.</p>
+         <p>Los schnauzers estándar son unos perros joviales y activos que pueden ser también tercos y obstinados. Son perros de una sola persona o de una sola familia y pueden volverse muy territoriales. No siempre se llevan bien con otros perros o animales domésticos, por lo que necesitarán una supervisión y sociabilización cuidadosas. Con su ladrido profundo alertan rápidamente a la familia si se acerca un extraño a su territorio, ya que son excelentes perros guardianes.</p>
+    </article>
+
+  <article id="gran-danes">
+      <h1>Gran Danes</h1>
+      <p>EA pesar de su tamaño, los grandes daneses se consideran gigantes dulces, son bastante juguetones y se llevan genial con los niños. Sin embargo, el propietario tiene que estar dispuesto a adaptarse al enorme tamaño del perro en lo referente al espacio y la alimentación, que puede resultar muy costosa.</p>
+      <p>Se les considera gigantes dulces. Son moderadamente juguetones, cariñosos y se llevan bien con los niños. Estos perros protegerán su hogar. Aunque suelen llevarse bien con otros animales, sobre todo si crecen juntos, algunos ejemplares de esta raza pueden ser agresivos con perros que no conocen.
+      Son fáciles de adiestrar, aunque algunos de sus criadores afirman que pueden ser aprendices bastante tozudos.</p>
+    </article>
+
+     <article id="san-bernardo">
+      <h1>San Bernardo</h1>
+      <p>Los San Bernardo son perros cariñosos y plácidos. Su simpatía instintiva probablemente contrarrestará el miedo inicial de un extraño que se acerca a un perro tan grande. No obstante, los San Bernardo son igualmente rápidos a la hora de proteger a los miembros de la familia que crean que están en peligro.
+      Por ser tan simpáticos, dulces y tolerantes, los San Bernardos pueden llevarse especialmente bien con familias con niños con buen comportamiento. Famosos por ser excepcionalmente comprensivos y pacientes, los San Bernardo tendrán cuidado para no herir a los niños.</p>
+   
+    </article>
+  </section>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+
+
+
+</html>

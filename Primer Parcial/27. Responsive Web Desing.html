@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Desing</title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+  <body style="font-family: Verdana;">
+    <h2> Diseño web adaptable</h2>
+    <p>El diseño web adaptable consiste en utilizar HTML y CSS para redimensionar, ocultar, reducir o ampliar automáticamente un sitio web para que se vea bien en todos los dispositivos (computadoras de escritorio, tabletas y teléfonos)</p>
+
+    <div style="background-color:#f1f1f1;padding:15px;">
+  <h1>31 minutos</h1>
+  <h3>Mi infancia</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Nombre del Programa</div>
+    <div class="menuitem">Creadores</div>
+    <div class="menuitem">País de Origen</div>
+    <div class="menuitem">Personajes</div>
+    <div class="menuitem">Gallery</div>
+  </div>
+
+  <div class="main">
+    <h2>Nombre del Programa</h2>
+    <p>31 minutos.</p>
+    <img src="img/31 minutos.jpg" style="width:50%">
+  </div>
+
+  <div class="right">
+    <h2>Pías de Origen</h2>
+    <p>La serie de televisión y banda musical 31 Minutos fue creada en Chile por la productora Aplaplac, y se estrenó en 2003. </p>
+    <h2>Creadores</h2>
+    <p>Los creadores principales son Álvaro Díaz, Pedro Peirano y Juan Manuel Egaña.</p>
+    <h2>Personajes</h2>
+    <p><strong>Tulio Triviño Tufillo:</strong> es el conductor de 31 minutos y el protagonista por antonomasia de la serie. Tulio es reconocido por sus gustos excéntricos y su comportamiento egocéntrico, distraído, déspota e ignorante. Cuando era joven, ingresó a la Patrulla Apumanque donde conoció a su gran amigo Juan Carlos Bodoque, quien le consiguió el trabajo de conductor del noticiero. Es millonario y le tiene fobia a las ballenas. Es un aficionado a las corbatas.
+    </p>
+    <p><strong>Juan Carlos Bodoque:</strong> es el periodista estrella del programa. Encargado de la sección La Nota Verde, donde trata temas sobre ecología y medio ambiente. Es un ludópata y un apostador empedernido en las carreras de caballos, en las cuales apuesta siempre a Tormenta China, una terrible yegua corredora. Es el mejor amigo de Tulio, a pesar de tenerle envidia por ser el conductor del noticiero y no él. Es un conejo de color rojo y le gusta conquistar mujeres.
+    </p>
+    <p><strong>Juanín Juan Harry:</strong> es el productor y coordinador del primer piso de 31 minutos. Es introvertido, tierno, leal, trabajólico y suele hacer todo el trabajo del programa. A menudo, los otros personajes se aprovechan de su ingenuidad y realizan fiestas en su casa sin su consentimiento. Adora al programa e idolatra a Tulio, aunque este lo trate como a un sirviente. Nunca ha tenido vacaciones en su vida, ya que prefiere pasar su tiempo libre haciendo labores en el canal. Frecuentemente se menciona que él es el último ejemplar conocido de la especie de los Juanines.
+    </p>
+  </div>
+</div>
+
+
+<div style="background-color:##efd76b;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Esta pagina web fue creada de una fan para los fans, espero les guste</div>
+
+
+
+
+
+  </body>
+</html>
